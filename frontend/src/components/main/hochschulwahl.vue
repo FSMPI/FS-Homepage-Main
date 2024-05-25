@@ -470,20 +470,19 @@ export default defineComponent({
 
     const v =
     [
-      "Olivia Kammerer",
-      "Mila Reihl",
-      "Martin Treuttner",
-      "Isabel Hirschmann",
-      "Natascha May",
-      "Christian Zanter",
-      "Marcel Schalling",
-      "Yannick Schieder",
-      "Jana Zanter",
-      "Moritz Quindt",
-      "Elias Laumeyer",
-      "Ghofrane Kamoun",
+      "Martin Treutterer",
       "Michael Ziegler",
-      "Johannes Lindner"
+      "Isabel Hirschmann",
+      "Scarlett Rasa",
+      "Antonia Richthammer",
+      "Paul Czerwik",
+      "Moritz Quindt",
+      "Yannick Schieder",
+      "Natascha May",
+      "Jana Zanter",
+      "Wilhelm Groba",
+      "Christian Zanter",
+      "Ghofrane Kamoun"
     ]
     return { v, stupaWahl, t, getKeyPath: VueRoutes.getKeyPath, extern, kontakt }
   }
@@ -632,7 +631,7 @@ h2 {
           mehrere Stimmen {e} einer Person geben {f}. Die genauen Gegebenheiten findet ihr auch direkt auf dem \
           Wahlzettel.",
   "h[5]": "{a} kann ich wählen?",
-  "p[20]": "Die Wahl findet am 14. Juni 2023 in Präsenz an der Uni Bayreuth statt. \
+  "p[20]": "Die Wahl findet am 12. Juni 2024 in Präsenz an der Uni Bayreuth statt. \
           Wenn ihr wahlberechtigt an der Fakultät MPI seid, könnt ihr eure Stimme \
           im S80 abgeben. Das Wahlbüro ist von 9 Uhr bis 18 Uhr geöffnet. \
           Zur Motivation backen wir für alle Wähler Waffeln mit Puderzucker. Außerdem schenken wir kostenlosen Kaffee aus!",
@@ -762,7 +761,7 @@ h2 {
           also give several votes {e} to one person {f}. You can find the exact \
           conditions directly on the ballot paper.",
   "h[5]": "{a} can i vote?",
-  "p[20]": "The election will take place on June 14, 2023 in presence at the University of Bayreuth. \
+  "p[20]": "The election will take place on June 12, 2023 in presence at the University of Bayreuth. \
           If you are eligible to vote at the Faculty MPI, you can cast your vote in the S80. \
           The election office is open from 9 am to 6 pm. To motivate you, we will bake waffles \
           with powdered sugar for all voters. We will also be serving free coffee!",
