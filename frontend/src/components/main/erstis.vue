@@ -76,7 +76,7 @@
           keypath="p[6]"
         />
         <br />
-        <i18n-t
+  <!--     <i18n-t
           tag="h1"
           keypath="h[7]"
         />
@@ -84,7 +84,10 @@
           tag="p"
           keypath="p[7]"
         />
+        
+
         <br />
+        --> 
         <i18n-t
           tag="h2"
           keypath="dates"
@@ -133,65 +136,59 @@ export default defineComponent({
     const categories = computed(() => [t('event'), t('location')])
 
     const stunden = computed(() => [
-      //`10.10 | ${t('ab')} 17:00`,
-      //'11.10 | 19:00',
-      '16.04 | 19:00',
-      '23.04 | 19:00',
-      '08.05 | 18:00',
-      //'10.11 - 12.11'
+      `08.10 | ${t('ab')} 17:00`,
+      '09.10 | 19:00',
+      '16.10 | 19:00',
+      '17.10 | 19:00',
+      '21.10 | 19:00',
+      '22.10 | 19:00',
+      '23.10 | 19:00',
+      '24.10 | 19:00',
+      '30.10 | 17:00',
+      '08.11 - 10.11'
     ])
 
     const sprechstunden = computed(() =>
     {
       let a: TableRow = {}
-      let b: TableRow = {}
-      /** 
-       //Wintersemestertermine
+      let b: TableRow = {} //Wintersemestertermine
       a[0] = [t('Erstsemestergrillen')]
       a[1] = ['1. ' + t('Kneipentour')],
-      a[2] = [
-        t('Vorstellung'),
-        t('Führung'),
-        t('Erstitüten')
-      ],
-      a[3] = [
-        t('Immatrikulationsstunde'),
-        t('Campusabend')
-      ],
-      a[4] = ['2. ' + t('Kneipentour')],
-      a[5] = [t('Sitzung')],
-      a[6] = [t('Spieleabend')],
+      a[2] = ['1. ' + t('buddy')],
+      a[3] = ['2. ' + t('Kneipentour')],
+      a[4] = [t('Sitzung')],
+      a[5] = [t('Spieleabend')],
+      a[6] = ['2. ' + t('buddy')],
       a[7] = [t('shake')],
-      //a[6] = ['1. ' + t('buddy')],
-      //a[7] = ['2. ' + t('buddy')],
-      a[8] = [t('Wochenende')],
-     
+      a[8] = [t('sdf')],
+      a[9] = [t('Wochenende')],
+
 
       b[0] = [t('nw2Innen')],
       b[1] = [t("Anmeldung")],
-      b[2] = ['H18 | NW2'],
-      b[3] = ['Audimax'],
-      b[4] = [t("Anmeldung")],
+      b[2] = ['H20 | NW2'],
+      b[3] = [t("Anmeldung")],
+      b[4] = ['H20 | NW2'],
       b[5] = ['H20 | NW2'],
-      b[6] = ['H20 | NW2']
-      b[7] = ['S72 | NW2'],
-      b[8] = [t("liste")]
-      */
+      b[6] = ['H20 | NW2'],
+      b[7] = [t("Anmeldung")],
+      b[8] = ['tdb'],
+      b[9] = [t('liste')]
+
 
 
       //Sommersemestertermine
-      a[0] = ['1. ' + t('Kneipentour')]
+/*      a[0] = ['1. ' + t('Kneipentour')]
       a[1] = [t('Spieleabend')],
       a[2] = [
         t('shake')
       ],
-     
+
 
       b[0] = [t('Anmeldung')],
       b[1] = ['H20 | NW2'],
       b[2] = [t("Anmeldung")];
-      
-
+*/
       let z: Table = {}
       z[0] = a
       z[1] = b
@@ -282,9 +279,9 @@ export default defineComponent({
           Problemen oder um einfach nur ein bisschen zu entspannen. Andererseits \
           organisiert die Fachschaft auch speziell für Erstsemester \
           Veranstaltungen zum Kennenlernen. Die Erstsemester-Veranstaltungen",
-  "h[3]": "Buddy-System",
-  "p[3]": "Dies ist ein Hilfssystem für Erstsemester, bei dem, jeder Ersti der \
-          möchte, einen Studierenden aus einem höheren Semester (bestenfalls \
+  "h[3]": "Buddy-System (und Spieleabende)",
+  "p[3]": "Dies ist ein Hilfesystem für Erstsemestler, bei dem jeder Ersti \
+          einen Studierenden aus einem höheren Semester (bestenfalls \
           gleiche Studienrichtung) zugeteilt bekommt. Dieser hilft gerne bei \
           organisatorischen Fragen des Studiums, da es gerade zum Anfang schon \
           mal ganz schön verwirrend werden kann. Außerdem werden ab und zu \
@@ -312,7 +309,7 @@ export default defineComponent({
   "h[7]": "Erstifrühstück",
   "p[7]": "Ein kleines, aber feines Frühstück in der Uni auf Kosten der \
           Fachschaft.",
-  "dates": "Termine für das Semester SoSe 2024",
+  "dates": "Termine für das Wintersemester 24/25",
   "event": "Veranstaltung",
   "location": "Ort",
   "ab": "ab",
@@ -370,7 +367,7 @@ export default defineComponent({
           How does it work? For one thing is the door to the student council naturally open for everyone \
           no matter if it's about concrete questions and problems or just to relax a bit. For the other is the student council organizing events just for freshman to get to know each other. \
           The freshman-events",
-  "h[3]": "Buddy-System",
+  "h[3]": "Buddy-System (and game evenings)",
   "p[3]": "This is a support system for freshman whereby every freshman which wants to participate gets a student of a higher semester assigned (of the same field of study in the best case). \
           Your budy will gladly help you with your questions regarding the organization of your studies especially since it can be somewhat confusing in the beginning. \
           Furthermore there will be some games evenings or similar offered where your able to get to know nice people from your faculty 😃",
@@ -388,7 +385,7 @@ export default defineComponent({
           Over foods and drinks you're able to get into conversations with other students.",
   "h[7]": "Freshers breakfast",
   "p[7]": "A small but fine breakfast in the uni at the expense of the student council.",
-  "dates": "Dates for the semester SoSe 2024",
+  "dates": "Dates for the winter semester 24/25",
   "event": "Event",
   "location": "Location",
   "ab": "from",
